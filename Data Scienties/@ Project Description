@@ -1,20 +1,15 @@
  📘 FINAL MASTER TRAINING DOCUMENT
-
 Program Title: End-to-End Data Analyst → Data Scientist → AI Engineer Industry Apprenticeship
 Trainee: Nikunj Goel
 Mentor Role: Senior Data Analyst, Data Scientist, AI Engineer & Industry Lead
 
----
-
 🗂️ 1. Final Dataset Structure
 
 🔹 Main Dataset (Core)
-
 Retail Superstore Dataset
 Used in almost every phase.
 
 Contains:
-
  Order ID, Order Date, Ship Date
  Customer ID, Segment, Region
  Product Category, Sub-category
@@ -37,8 +32,6 @@ Derived from Superstore:
  Daily / Monthly Sales
  Profit trends
  Demand series
-
----
 
 🏗️ 2. Final Training Architecture
 
