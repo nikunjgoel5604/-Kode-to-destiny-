@@ -84,25 +84,21 @@ You will complete:
                   1 analytics dashboard
                   1 business report
 ```
-
 ⛏️ Phase 2 – Data Mining & Predictive Modeling
 
 Goal: Find hidden patterns.
 
 Topics:
-
- Clustering (Customer Segments)
- Association Rules
- Feature selection
- PCA
- Pattern discovery
+      Clustering (Customer Segments)
+      Association Rules
+      Feature selection
+      PCA
+      Pattern discovery
 
 📁 Deliverables:
-
- Segmentation model
- Pattern mining notebook
- Mini business report
-
+            Segmentation model
+            Pattern mining notebook
+            Mini business report
 ---
 
 🤖 Phase 3 – Machine Learning
@@ -110,7 +106,6 @@ Topics:
 Goal: Build predictive intelligence.
 
 Topics:
-
  Regression (Sales/Profit)
  Classification (Churn risk)
  Model evaluation
