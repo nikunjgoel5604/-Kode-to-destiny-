@@ -106,17 +106,16 @@ Topics:
 Goal: Build predictive intelligence.
 
 Topics:
- Regression (Sales/Profit)
- Classification (Churn risk)
- Model evaluation
- Hyperparameter tuning
- Explainable AI
+      Regression (Sales/Profit)
+      Classification (Churn risk)
+      Model evaluation
+      Hyperparameter tuning
+      Explainable AI
 
 📁 Deliverables:
-
- Trained ML models
- Evaluation reports
- Model comparison notebook
+               Trained ML models
+               Evaluation reports
+               Model comparison notebook
 
 ---
 
