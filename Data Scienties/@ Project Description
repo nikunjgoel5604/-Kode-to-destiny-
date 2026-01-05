@@ -129,28 +129,22 @@ Topics:
       Topic modeling
 
 📁 Deliverables:
-
- Sentiment analysis model
- Review insights dashboard
-
+               Sentiment analysis model
+               Review insights dashboard
 ---
 
 ⏳ Phase 5 – Time Series Analysis
-
 Goal: Predict the future.
 
 Topics:
-
- Stationarity
- Trend/Seasonality
- ARIMA, SARIMA, Prophet
- Forecasting metrics
+      Stationarity
+      Trend/Seasonality
+      ARIMA, SARIMA, Prophet
+      Forecasting metrics
 
 📁 Deliverables:
-
- Sales forecasting model
- Forecast report
-
+               Sales forecasting model
+               Forecast report
 ---
 
 📈 Phase 6 – Power BI / Tableau
