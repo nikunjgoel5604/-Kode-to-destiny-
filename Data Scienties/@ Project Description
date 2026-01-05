@@ -116,20 +116,17 @@ Topics:
                Trained ML models
                Evaluation reports
                Model comparison notebook
-
 ---
 
 🧠 Phase 4 – NLP & Sentiment Analysis
-
 Goal: Understand customer emotions.
 
 Topics:
-
- Text cleaning
- TF-IDF
- Word embeddings
- Sentiment classification
- Topic modeling
+      Text cleaning
+      TF-IDF
+      Word embeddings
+      Sentiment classification
+      Topic modeling
 
 📁 Deliverables:
 
