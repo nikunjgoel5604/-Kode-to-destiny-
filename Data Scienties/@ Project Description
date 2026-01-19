@@ -4,14 +4,13 @@ Trainee: Nikunj Goel
 Mentor Role: Senior Data Analyst, Data Scientist, AI Engineer & Industry Lead
 
 🗂️ 1. Final Dataset Structure
-
 🔹 Main Dataset (Core)
 Retail Superstore Dataset
 Used in almost every phase.
 
 Contains:
- Order ID, Order Date, Ship Date
- Customer ID, Segment, Region
+         Order ID, Order Date, Ship Date
+         Customer ID, Segment, Region
  Product Category, Sub-category
  Sales, Quantity, Discount, Profit
  City, State, Country
