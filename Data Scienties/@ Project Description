@@ -7,7 +7,6 @@ Mentor Role: Senior Data Analyst, Data Scientist, AI Engineer & Industry Lead
 🔹 Main Dataset (Core)
 Retail Superstore Dataset
 Used in almost every phase.
-
 Contains:
          Order ID, Order Date, Ship Date
          Customer ID, Segment, Region
@@ -16,7 +15,6 @@ Contains:
          City, State, Country
 
 🔹 Supporting Dataset 1 (For NLP)
-
 Customer Reviews Dataset:
                         Review Text
                         Rating
@@ -24,14 +22,12 @@ Customer Reviews Dataset:
                         Sentiment Label (or created by us)
 
 🔹 Supporting Dataset 2 (For Time Series)
-
 Derived from Superstore:
                      Daily / Monthly Sales
                      Profit trends
                      Demand series
 
 🏗️ 2. Final Training Architecture
-
 Your entire journey is divided into 8 Phases, each with:
                                                    Concepts
                                                    Coding
@@ -59,9 +55,7 @@ AI System
 Deployment & Final Portfolio
 ```
 📊 Phase 1 – Foundations & Data Analytics
-
 Goal: Think like a professional analyst.
-
 You will complete:
                Data types, variables
                Statistics (Mean, SD, Distribution, Correlation)
@@ -81,7 +75,6 @@ You will complete:
                   1 business report
 ```
 ⛏️ Phase 2 – Data Mining & Predictive Modeling
-
 Goal: Find hidden patterns.
 
 Topics:
@@ -98,7 +91,6 @@ Topics:
 ---
 
 🤖 Phase 3 – Machine Learning
-
 Goal: Build predictive intelligence.
 
 Topics:
