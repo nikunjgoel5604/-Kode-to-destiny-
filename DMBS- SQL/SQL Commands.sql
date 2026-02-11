@@ -1,3 +1,11 @@
+/* In SQL we some certain command to Run , update delete or more to do in SQL
+for That SQL commands are divide in to 5 categories :- 
+                                              1. DDL - Data Definition Language 
+                                              2. DML - Data Manipulation Language
+                                              3. DQL - Data Query Language 
+                                              4. DCL - Data Control Langauge 
+                                              5. TCL - Transaction Control Langauge */
+
 CREATE DATABASE CollegeDB;
 USE CollegeDB;
 
