@@ -10,3 +10,6 @@ for That SQL commands are divide in to 5 categories :-
 -- we use DDL becuse before inser tdata we must define structure 
 -- DDL 	command are :-  CREATE , ALTER , DROP TRUNCATE , RENAME.
 
+create database college_db; -- we create the Databse with the name college_db;
+show databases;  -- now we have create the databse so check it is the database create sucessfull or not so we use show database to know about that.
+use college_db;  -- now we know that our database is create sucessfull . so use acesses that database we use a command use college_db (here college_db is the database name).
