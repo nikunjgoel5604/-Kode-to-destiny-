@@ -164,7 +164,6 @@ INSERT INTO accounts VALUES
 
 -- Start transaction
 START TRANSACTION;
-
 UPDATE accounts
 SET balance = balance - 1000
 WHERE acc_id = 1;
@@ -172,30 +171,23 @@ WHERE acc_id = 1;
 UPDATE accounts
 SET balance = balance + 1000
 WHERE acc_id = 2;
-
 -- Save changes permanently
 COMMIT;
 
 START TRANSACTION;
-
 UPDATE accounts
 SET balance = balance - 1000
 WHERE acc_id = 1;
-
 -- Something wrong happened
 ROLLBACK;
 
 START TRANSACTION;
-
 UPDATE accounts SET balance = balance - 500 WHERE acc_id = 1;
-
 SAVEPOINT sp1;
-
 UPDATE accounts SET balance = balance + 500 WHERE acc_id = 2;
 
 -- Undo only last step
 ROLLBACK TO sp1;
-
 COMMIT;
 SELECT * FROM accounts;
 
