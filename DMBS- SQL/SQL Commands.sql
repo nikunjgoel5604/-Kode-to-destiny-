@@ -146,13 +146,58 @@ ON college_db.student
 FROM 'analyst1'@'localhost';
 
 
+/*TCL commands are used to manage transactions in a database. A transaction is a group of SQL operations executed as a single unit.
+🔹 Why - ✅ Data consistency ✅ Data accuracy✅ Data safety
+Commands 1. START TRANSACTION / BEGIN
+2. COMMIT
+3. ROLLBACK
+4. SAVEPOINT */
 
+CREATE TABLE accounts(
+    acc_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    balance INT
+);
+INSERT INTO accounts VALUES
+(1,'Nikunj',5000),
+(2,'Rahul',3000);
 
+-- Start transaction
+START TRANSACTION;
 
+UPDATE accounts
+SET balance = balance - 1000
+WHERE acc_id = 1;
 
+UPDATE accounts
+SET balance = balance + 1000
+WHERE acc_id = 2;
 
+-- Save changes permanently
+COMMIT;
 
+START TRANSACTION;
 
+UPDATE accounts
+SET balance = balance - 1000
+WHERE acc_id = 1;
+
+-- Something wrong happened
+ROLLBACK;
+
+START TRANSACTION;
+
+UPDATE accounts SET balance = balance - 500 WHERE acc_id = 1;
+
+SAVEPOINT sp1;
+
+UPDATE accounts SET balance = balance + 500 WHERE acc_id = 2;
+
+-- Undo only last step
+ROLLBACK TO sp1;
+
+COMMIT;
+SELECT * FROM accounts;
 
 
 
