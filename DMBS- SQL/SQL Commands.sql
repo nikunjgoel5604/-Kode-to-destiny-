@@ -70,6 +70,85 @@ SELECT MAX(age) FROM student; -- Highest marks
 select city, count(*) from student group by city; 
 SELECT city, COUNT(*) FROM student GROUP BY city HAVING COUNT(*) >= 1; -- Cities having more than 1 student
 
+/* DCL commands are used to control access and permissions in a database.
+They decide:
+Who can access data
+What operations a user can perform . Security of database
+
+🔹 Why We Use DCL
+In real companies:
+Multiple users access same database. Not everyone should modify data
+Some users only read data. Some users manage database.
+Example:
+Data Analyst → SELECT only
+Developer → INSERT, UPDATE
+Admin → Full access
+
+DCL commands are :- GRANT, revoke
+ GRANT is used to give permissions to a user.
+ GRANT privilege
+ON database_name.table_name
+TO user_name;
+🔹 Types of Privileges
+SELECT   → Read data
+INSERT   → Add data
+UPDATE   → Modify data
+DELETE   → Remove data
+ALL      → All permission
+
+REVOKE removes permissions from a user.
+🔹 Syntax
+REVOKE privilege
+ON database_name.table_name
+FROM user_name;
+*/
+-- STEP 01 Step 1 — Create User (Admin Work)
+CREATE USER 'analyst1'@'localhost'
+IDENTIFIED BY 'Qwerty@#0113';  
+-- Step 2 — Give Permission
+GRANT SELECT
+ON college_db.student
+TO 'analyst1'@'localhost';
+
+-- Give SELECT permission to user1
+GRANT SELECT
+ON college_db.student
+TO 'user1'@'localhost';
+
+# Give insert and update permission
+GRANT INSERT, UPDATE
+ON college_db.student
+TO 'user1'@'localhost';
+
+-- Give all permissions
+GRANT ALL PRIVILEGES
+ON college_db.*
+TO 'admin1'@'localhost';
+
+-- Remove read permission
+REVOKE SELECT
+ON college_db.student
+FROM 'user1'@'localhost';
+
+-- Remove read permission
+REVOKE SELECT
+ON college_db.student
+FROM 'user1'@'localhost';
+
+# Remove all access
+REVOKE ALL PRIVILEGES
+ON college_db.*
+FROM 'user1'@'localhost';
+
+-- Step 3 — Remove Permission (if needed)
+REVOKE SELECT
+ON college_db.student
+FROM 'analyst1'@'localhost';
+
+
+
+
+
 
 
 
