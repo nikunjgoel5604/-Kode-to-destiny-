@@ -17,18 +17,27 @@ create table student (
 student_id int primary key, -- here you see we make a key primary key . we study about that quite later.
 name varchar(255),
 age int);
-
 alter table student add city varchar(255); -- alter is use to add or remove something from the table 
 truncate table student; --  Remove all records but keep structure
 -- drop table student; --  # Delete table permanently with all the record and drop also use to delete the database complete.
+desc student; -- DESC (or DESCRIBE) is used to display the structure of a table.
 
 
--- 
+/*  2 DML commands are use to manipulate data inside table for insert change delete the data .
+DML commands are Insert change delete  */
 
+insert into student values (001,'Nikunj',21,'Delhi'),
+(002,"Bhavya",20,"Nodia");
+select * from student;  -- you see we have insert some values in table to see the table we select command here 
 
+update student set city ="Noida" where student_id =001;
+select * from student;
 
+insert into student value (003,"Rahul", 21, "Delhi");
+select * from student;  -- here you see we add one me value in table . 
+/* In SQL Value and values are two diffent thing - value mean to add single value in table 
+values means to add one and more values in table .
+So We recommend use values */
 
-
-
-
-
+delete from student where student_id =003;
+select * from student;
