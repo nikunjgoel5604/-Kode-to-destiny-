@@ -41,3 +41,39 @@ So We recommend use values */
 
 delete from student where student_id =003;
 select * from student;
+
+/* DQL command use to retrieve data from database.
+why -  to analyze or view stored data
+DQL Command are - select, where,  order by, group by, having, limit, distinct  */
+
+-- firt we add few values in table to excute more funtion in SQL. 
+insert into student value
+ (003, "Rahul", 21," Delhi"),
+(004, 'aman',20,'Rajasthan'),
+(005,'Raju',19,'BSR');
+select * from student; -- to view all the values in our database. 
+select name, city from student; -- to view specfic column and their value. 
+select distinct age from student; -- to view only unique values it remove the dulicate values. 
+select * from student where age >=20; -- -- Students having age greater than equal 20  and Comparison Operators.
+select * from student order by name asc; -- to view the data in acesding order. 
+select * from student order by city desc; -- to view the data in desending order. 
+select * from student limit 2; -- view only top value . 
+SELECT * FROM student WHERE city = 'BSR' AND age = 19; -- use of "AND" oprator. 
+select * from student where age BETWEEN 20 and 21; -- use amd and betwwen oprator togethere. 
+select * from student where city In ("Nodia", "Rajasthan");
+select * from student where name like "b%";-- it show that first letter will be B.
+select * from student where name like "%j";-- it show that last letter will be J.
+-- aggreagate funtion - for calculation on multiplte rows. 
+SELECT COUNT(*) FROM student; -- Total students
+SELECT AVG(age) FROM student; -- Average marks
+SELECT MAX(age) FROM student; -- Highest marks
+select city, count(*) from student group by city; 
+SELECT city, COUNT(*) FROM student GROUP BY city HAVING COUNT(*) >= 1; -- Cities having more than 1 student
+
+
+
+
+
+
+
+
