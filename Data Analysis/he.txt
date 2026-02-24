@@ -1,3 +1,0 @@
-df = pd.read_csv("E:\Data Science\@Notes\‏‏‏\# Pratices Sheets\Pratices\Data Analysis\DataSet.csv",
-    encoding="latin1"
-)
