@@ -1,0 +1,30 @@
+what is array 
+types of array :- one-dimension array (1d array)
+                  two-dimension array(2d array)
+multi dimension array 
+static array
+dynamic array
+jaggred array (array of array)
+basic operation of array :- insertion 
+deletion 
+searching/ search
+updation(modification)
+traversal
+rotation 
+prefix sum in array 
+surfix sun in array 
+sliding windows techniques 
+subarray 
+two-pointer technique
+kadan's algorithm
+key charachterstics of array :- fixed array (for static array)
+homogeneous datatypes 
+contiguous memory allocation 
+indexed array
+need for array 
+why array are need
+application of aaray in DSA :- data storage
+building other data structures 
+matrix representation 
+algorithm 
+real-world application  
